@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://byuthtp0pmnbi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nf2bk"]
+bg_color = Color(0.972549, 1, 1, 1)
+corner_radius_top_left = 99
+corner_radius_top_right = 99
+corner_radius_bottom_right = 99
+corner_radius_bottom_left = 99
+
+[node name="clouds" type="Node2D" unique_id=1664699458]
+position = Vector2(2, -4)
+
+[node name="Panel" type="Panel" parent="." unique_id=625149130]
+custom_minimum_size = Vector2(25, 25)
+offset_left = -51.000004
+offset_top = -22.0
+offset_right = -26.000004
+offset_bottom = 18.0
+scale = Vector2(0.25309274, 0.28318968)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
+
+[node name="Panel2" type="Panel" parent="Panel" unique_id=853720579]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 0
+offset_left = 136.00629
+offset_top = -180.3459
+offset_right = 176.00629
+offset_bottom = -140.3459
+scale = Vector2(7.0537024, 6.745139)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
+
+[node name="Panel3" type="Panel" parent="Panel" unique_id=244071063]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 0
+offset_left = -20.44025
+offset_top = -341.50943
+offset_right = 19.55972
+offset_bottom = -301.50943
+scale = Vector2(7.0537024, 6.745139)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
+
+[node name="Panel4" type="Panel" parent="Panel" unique_id=1598112179]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 0
+offset_left = 339.3081
+offset_top = -230.34589
+offset_right = 379.3081
+offset_bottom = -190.34589
+scale = Vector2(7.0537024, 6.745139)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
+
+[node name="Panel6" type="Panel" parent="Panel" unique_id=118559310]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 0
+offset_left = -90.09436
+offset_top = -164.62265
+offset_right = -50.09436
+offset_bottom = -124.62265
+scale = Vector2(7.0537024, 6.745139)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
+
+[node name="Panel5" type="Panel" parent="Panel" unique_id=1977277934]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 0
+offset_left = 203.45912
+offset_top = -351.10062
+offset_right = 243.45912
+offset_bottom = -311.10062
+scale = Vector2(7.0537024, 6.745139)
+theme_override_styles/panel = SubResource("StyleBoxFlat_nf2bk")
