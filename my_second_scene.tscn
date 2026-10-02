@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://5hetuwmw5uuk"]
+
+[ext_resource type="Script" uid="uid://dh33iyb5epr23" path="res://pinocchio.gd" id="2_mnu2n"]
+[ext_resource type="Texture2D" uid="uid://bkhjufe4ysiag" path="res://pictures/hot-air-balloon-transparent-png-4.png" id="3_8asdn"]
+[ext_resource type="PackedScene" uid="uid://byuthtp0pmnbi" path="res://node_2d.tscn" id="3_mnu2n"]
+[ext_resource type="Script" uid="uid://k25dphn0sywi" path="res://hot_air_balloon.gd" id="4_8asdn"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bo7ot"]
+load_path = "res://.godot/imported/pinocchio_1940_png_by_ericstirbescu_dgdq8kc-fullview.png-06e3f847d8c0477baa5050e62ee546c9.ctex"
+
+[node name="cawfee" type="Node2D" unique_id=687454456]
+position = Vector2(3, 6)
+
+[node name="clouds" parent="." unique_id=1664699458 instance=ExtResource("3_mnu2n")]
+position = Vector2(618, 317)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="clouds2" parent="clouds" unique_id=745073668 instance=ExtResource("3_mnu2n")]
+show_behind_parent = true
+z_index = 10
+position = Vector2(441, -139)
+
+[node name="clouds" parent="clouds" unique_id=1812827350 instance=ExtResource("3_mnu2n")]
+show_behind_parent = true
+z_index = 10
+position = Vector2(464, 86)
+
+[node name="pinocchio" type="Sprite2D" parent="." unique_id=291777805]
+position = Vector2(372.00003, 456)
+scale = Vector2(0.26356253, 0.27720237)
+texture = SubResource("CompressedTexture2D_bo7ot")
+script = ExtResource("2_mnu2n")
+
+[node name="HotAirBalloon" type="Sprite2D" parent="." unique_id=2126733183]
+position = Vector2(922.9999, 179)
+scale = Vector2(0.424074, 0.424074)
+texture = ExtResource("3_8asdn")
+script = ExtResource("4_8asdn")
