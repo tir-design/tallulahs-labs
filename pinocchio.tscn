@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bfikek3lmrq4f"]
+
+[ext_resource type="Script" uid="uid://dh33iyb5epr23" path="res://pinocchio.gd" id="1_n3qty"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bo7ot"]
+load_path = "res://.godot/imported/pinocchio_1940_png_by_ericstirbescu_dgdq8kc-fullview.png-06e3f847d8c0477baa5050e62ee546c9.ctex"
+
+[node name="pinocchio" type="Node2D" unique_id=687454456]
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=291777805]
+position = Vector2(-3, -1)
+scale = Vector2(0.26356253, 0.27720237)
+texture = SubResource("CompressedTexture2D_bo7ot")
+script = ExtResource("1_n3qty")

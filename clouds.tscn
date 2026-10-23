@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bfdtqk7y2tcvg"]
+
+[ext_resource type="Script" uid="uid://c84dpxbdjl4g" path="res://clouds.gd" id="1_4xwbv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h331j"]
+bg_color = Color(12.130976, 14.314274, 11.708403, 1)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[node name="cloud" type="Node2D" unique_id=96855362]
+
+[node name="Panel" type="Panel" parent="." unique_id=1156536684]
+offset_left = 16.0
+offset_top = 95.0
+offset_right = 116.0
+offset_bottom = 195.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h331j")
+script = ExtResource("1_4xwbv")
+
+[node name="Panel" type="Panel" parent="Panel" unique_id=1051479880]
+layout_mode = 0
+offset_left = 46.0
+offset_top = -59.0
+offset_right = 146.0
+offset_bottom = 41.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h331j")
+
+[node name="Panel2" type="Panel" parent="Panel" unique_id=916234138]
+layout_mode = 0
+offset_left = 136.0
+offset_top = -2.0
+offset_right = 236.0
+offset_bottom = 98.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h331j")
+
+[node name="Panel3" type="Panel" parent="Panel" unique_id=711833012]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 22.0
+offset_right = 172.0
+offset_bottom = 122.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h331j")
+
+[node name="Panel4" type="Panel" parent="Panel" unique_id=1101270686]
+layout_mode = 0
+offset_left = 117.0
+offset_top = -58.0
+offset_right = 217.0
+offset_bottom = 42.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h331j")

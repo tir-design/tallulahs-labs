@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c8aj3ppaymuki"]
+
+[ext_resource type="Texture2D" uid="uid://bkhjufe4ysiag" path="res://pictures/hot-air-balloon-transparent-png-4.png" id="2_r2gx6"]
+[ext_resource type="Script" uid="uid://k25dphn0sywi" path="res://hot_air_balloon.gd" id="3_wmp0i"]
+
+[node name="hot air balloon" type="Node2D" unique_id=687454456]
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=2126733183]
+position = Vector2(2.9999695, 1.9999847)
+scale = Vector2(0.424074, 0.424074)
+texture = ExtResource("2_r2gx6")
+script = ExtResource("3_wmp0i")
