@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dd7kaaxv2sjyj"]
+
+[ext_resource type="PackedScene" uid="uid://roq3q4ty0y17" path="res://player.tscn" id="1_a202f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h331j"]
+size = Vector3(60, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h331j"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
+sky_top_color = Color(0.1965755, 0.63324815, 0.8792162, 1)
+sky_horizon_color = Color(0.69057983, 0.81871045, 0.85415375, 1)
+ground_bottom_color = Color(0.12263443, 0.19848424, 0.094289474, 1)
+ground_horizon_color = Color(0.69057983, 0.81871045, 0.85415375, 1)
+
+[sub_resource type="Sky" id="Sky_noarx"]
+sky_material = SubResource("ProceduralSkyMaterial_a202f")
+
+[sub_resource type="Environment" id="Environment_a0tk4"]
+background_mode = 2
+sky = SubResource("Sky_noarx")
+ambient_light_color = Color(0.5754303, 0.80541605, 0.83522135, 1)
+glow_enabled = true
+
+[node name="main" type="Node3D" unique_id=813157064]
+
+[node name="floor" type="StaticBody3D" parent="." unique_id=286296983]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor" unique_id=90477488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+shape = SubResource("BoxShape3D_h331j")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="floor" unique_id=1281552275]
+mesh = SubResource("BoxMesh_h331j")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1302399756]
+environment = SubResource("Environment_a0tk4")
+
+[node name="camerapivot" type="Marker3D" parent="." unique_id=954477839]
+transform = Transform3D(-3.117377, 0, 0, 0, 1.1300361, -0.048726656, 0, -0.09631272, -0.57170933, 74.71542, -7.990391, 97.445496)
+
+[node name="Camera3D" type="Camera3D" parent="camerapivot" unique_id=512796762]
+transform = Transform3D(0.28045246, -0.09235312, 0.12537436, -0.10017822, 0.58319294, 0.6536816, -0.8225177, -1.2070094, 0.95080084, 27.129576, 24.015709, 183.24548)
+fov = 106.87499
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=784282946]
+transform = Transform3D(1, 0, 0, 0, 0.9249514, 0.3800855, 0, -0.3800855, 0.9249514, 2.2355347, 42.445915, 2505.5696)
+light_color = Color(1, 0.50980395, 1, 1)
+shadow_enabled = true
+
+[node name="player2" parent="." unique_id=531030509 instance=ExtResource("1_a202f")]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.3966377e-07, -0.9249514, 0.3800855, 5.7391315e-08, 0.3800855, 0.9249514, 0, 0, 0)
+motion_mode = 1
